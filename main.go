@@ -110,6 +110,7 @@ func main() {
 		}
 
 		// otherwise pull.
+		// TODO(mpl): skip (or dup, or whatever) the ones that were pulled with ssh.
 		if err := os.Chdir(name); err != nil {
 			log.Fatal(err)
 		}
